@@ -1,9 +1,16 @@
-import "../styles/globals.css";
-// add bootstrap css
+import '../styles/globals.css'
+import type { AppProps } from 'next/app'
 import "bootstrap/dist/css/bootstrap.css";
-import type { AppProps } from "next/app";
+import NavigationBar from '../components/NavigationBar';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return(
+    <>
+    <NavigationBar/>
+    <Component {...pageProps} />
+    </>
+
+  )
+ 
 }
 export default MyApp;
