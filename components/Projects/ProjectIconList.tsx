@@ -1,3 +1,11 @@
+import React from "react";
+
+// Bootstrap
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
+// Components
 import ProjectIcon from "./ProjectIcon";
 
 const tmp_project_list = [
@@ -7,21 +15,42 @@ const tmp_project_list = [
     imageURL:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Code.org_logo.svg/1200px-Code.org_logo.svg.png",
   },
+  {
+    title: "Another One?",
+    description: "wait theres more??",
+    imageURL: "https://miro.medium.com/max/4800/0*MGwhgis8-7h-M0M0",
+  },
+  {
+    title: "Another One?",
+    description: "wait theres more??",
+    imageURL: "https://miro.medium.com/max/4800/0*MGwhgis8-7h-M0M0",
+  },
+  {
+    title: "Another One?",
+    description: "wait theres more??",
+    imageURL: "https://miro.medium.com/max/4800/0*MGwhgis8-7h-M0M0",
+  },
 ];
 
 const ProjectIconList = () => {
   return (
-    <div style={{ width: 200 }}>
-      {tmp_project_list.map((proj) => {
-        return (
-          <ProjectIcon
-            title={proj.title}
-            description={proj.description}
-            imageURL={proj.imageURL}
-          />
-        );
-      })}
-    </div>
+    <Container style={{ flex: 1, display: "grid", paddingLeft: 10 }}>
+      <Row xs={2}>
+        {React.Children.toArray(
+          tmp_project_list.map((proj) => {
+            return (
+              <Col>
+                <ProjectIcon
+                  title={proj.title}
+                  description={proj.description}
+                  imageURL={proj.imageURL}
+                />
+              </Col>
+            );
+          })
+        )}
+      </Row>
+    </Container>
   );
 };
 
