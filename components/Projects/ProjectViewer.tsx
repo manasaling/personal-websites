@@ -8,10 +8,10 @@ const ProjectViewer = () => {
   const project = context.project;
 
   return (
-    <Card style={{ width: "70%" }}>
-      <Card.Title>{project.title}</Card.Title>
-      <Card.Body>{project.description}</Card.Body>
-      <Card.Img src={project.image} />
+    <Card style={{ width: "70%", padding: "2em" }}> 
+      <Card.Title style={{ fontSize: "3em"}}>{project.title}</Card.Title>
+      <Card.Img style={{ height: "300px", objectFit: "cover"}}src={project.image} />
+      <Card.Body style={{ paddingLeft: "0", paddingRight: "0"}}>{project.description}</Card.Body>
     </Card>
   );
 };
