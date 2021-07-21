@@ -34,8 +34,8 @@ const tmp_project_list = [
 
 const ProjectIconList = () => {
   return (
-    <Container style={{ flex: 1, display: "grid", paddingLeft: 10 }}>
-      <Row xs={2}>
+    <Container style={{ flex: 1, display: "grid", paddingLeft: 10, height:"100vh", overflowY:"auto", overflowX:"hidden", direction: "rtl"}}>
+      <Row style={{direction: "ltr"}} xs={1} > 
         {React.Children.toArray(
           tmp_project_list.map((proj) => {
             return (

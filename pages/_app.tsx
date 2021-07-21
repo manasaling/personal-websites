@@ -1,16 +1,20 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+// Styling
+import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
-import NavigationBar from '../components/NavigationBar';
+
+// Next.js
+import type { AppProps } from "next/app";
+
+// Components
+import NavigationBar from "../components/NavigationBar";
+import { AppWrapper } from "../context/state"; // react "context" for global state, edit file to add more contexts
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return(
-    <>
-    <NavigationBar/>
-    <Component {...pageProps} />
-    </>
-
-  )
- 
+  return (
+    <AppWrapper>
+      <NavigationBar />
+      <Component {...pageProps} />
+    </AppWrapper>
+  );
 }
 export default MyApp;
