@@ -1,6 +1,7 @@
 .detail{
   display: flex;
-
+  gap: 50px;
+  align-items: center;
   }
 
 .bio{
@@ -14,4 +15,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cirleimg{
+  clip-path: circle();
+}
+.social-media{
+  border: 1px solid red;
+}
+.social-icon{
+  margin-right: 20px;
 }
