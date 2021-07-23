@@ -7,14 +7,14 @@ import type { AppProps } from "next/app";
 
 // Components
 import NavigationBar from "../components/NavigationBar";
-import { AppWrapper } from "../context/state"; // react "context" for global state, edit file to add more contexts
+import { StateProvider } from "../context/store"; // react "context" for global state, edit file to add more contexts
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <AppWrapper>
+    <StateProvider>
       <NavigationBar />
       <Component {...pageProps} />
-    </AppWrapper>
+    </StateProvider>
   );
 }
 export default MyApp;
