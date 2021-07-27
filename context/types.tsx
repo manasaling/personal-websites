@@ -1,0 +1,1 @@
+export const SET_CURRENT_PROJECT: string = "SET_CURRENT_PROJECT";
