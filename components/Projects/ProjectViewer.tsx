@@ -12,15 +12,15 @@ const ProjectViewer = () => {
   } = useContext(store);
 
   return (
-    <Card style={{ width: "70%", marginRight: 10 }}>
-      <Card.Title style={{ fontSize: "3em" }}>{project.title}</Card.Title>
+    <Card style={{ width: "80%", marginRight: 10, maxHeight: "80vh" }}>
+      <Card.Title style={{ fontSize: "3em", marginLeft: 10 }}>
+        {project.title}
+      </Card.Title>
       <Card.Img
         style={{ height: "300px", objectFit: "cover" }}
         src={project.imageURL}
       />
-      <Card.Body style={{ paddingLeft: "0", paddingRight: "0" }}>
-        {project.description}
-      </Card.Body>
+      <Card.Body style={{ paddingLeft: 10 }}>{project.description}</Card.Body>
     </Card>
   );
 };

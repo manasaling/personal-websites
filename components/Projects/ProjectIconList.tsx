@@ -30,6 +30,16 @@ const tmp_project_list = [
     description: "wait theres more??",
     imageURL: "https://miro.medium.com/max/4800/0*MGwhgis8-7h-M0M0",
   },
+  {
+    title: "Another One?",
+    description: "wait theres more??",
+    imageURL: "https://miro.medium.com/max/4800/0*MGwhgis8-7h-M0M0",
+  },
+  {
+    title: "Another One?",
+    description: "wait theres more??",
+    imageURL: "https://miro.medium.com/max/4800/0*MGwhgis8-7h-M0M0",
+  },
 ];
 
 const ProjectIconList = () => {
@@ -41,13 +51,14 @@ const ProjectIconList = () => {
         paddingLeft: 10,
         overflowY: "auto",
         overflowX: "hidden",
+        height: "100vh",
       }}
     >
       <Row style={{ direction: "ltr" }} xs={1}>
         {React.Children.toArray(
           tmp_project_list.map((proj) => {
             return (
-              <Col xs={6} style={{ marginTop: 10 }}>
+              <Col xs style={{ marginTop: 10 }}>
                 <ProjectIcon
                   title={proj.title}
                   description={proj.description}

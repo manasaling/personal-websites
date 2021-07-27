@@ -28,7 +28,7 @@ const ProjectIcon = ({ title, description, imageURL }: ProjectIconProps) => {
   };
 
   return (
-    <Card style={{ height: "27vh" }}>
+    <Card>
       <div
         style={{ height: 100, overflow: "hidden", cursor: "pointer" }}
         onClick={handleImageClicked}
