@@ -5,11 +5,12 @@
 }
 
 .submitButton{
-    background-color: #BBD3E7;
-    border: #BBD3E7;
+    background-color: #6496be;
+    border: #6496be;
+    margin-top: 10px;
 }
 
 .contactTitle{
-    color: #BBD3E7;
+    color: #6496be;
     text-align: center;
 }

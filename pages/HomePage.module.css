@@ -1,22 +1,22 @@
 
 .detail{
   display: flex;
+  gap: 50px;
   align-items: center;
-
   }
 
 .bio{
   width: 500px;
   font-family: 'Anton', sans-serif;
   font-family: 'Roboto', sans-serif;
-  color:  #BBD3E7;
+  color:  #6496be;
 
 }
 
 
 .name{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:  #BBD3E7;
+  color:  #6496be;
   
 
 }
@@ -27,6 +27,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-
+.cirleimg{
+  clip-path: circle();
+}
+.social-media{
+  border: 1px ;
+}
+.social-icon{
+  margin-right: 20px;
+}

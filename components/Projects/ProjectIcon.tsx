@@ -9,8 +9,12 @@ type ProjectIconProps = {
 
 const ProjectIcon = ({ title, description, imageURL }: ProjectIconProps) => {
   return (
-    <Card style={{marginTop: "1em",marginBottom: "1em"}}>
-      <Button>
+    <Card
+      style={{
+        height: "30vh",
+      }}
+    >
+      <Button style={{ overflow: "hidden" }}>
         <Card.Img variant="top" src={imageURL} />
       </Button>
       <Card.Body>
