@@ -1,12 +1,12 @@
 import React from "react"
 import {Nav, NavDropdown, Navbar, Form, Button, FormControl} from "react-bootstrap"
 import Link from 'next/link'
-
+import styles from './NavigationBar.module.css'
 function NavigationBar() {
   return (
-    <div className="navbar-body" >
+    <div className={styles.navBar} >
     <>
-  <Navbar bg="dark" variant="dark">
+  <Navbar className={styles.colorNav} variant="dark">
     
     <Nav className="mr-auto">
       

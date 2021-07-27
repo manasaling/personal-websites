@@ -1,8 +1,15 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import styles from './HomePage.module.css'
+
 export default function HomePage() {
     return <div>
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&display=swap');
+</style>
       <div className={styles.homepage}>
 
         <div className={styles.detail}>

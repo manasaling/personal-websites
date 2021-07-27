@@ -1,0 +1,16 @@
+.contactForm{
+    padding-top: 50px;;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.submitButton{
+    background-color: #6496be;
+    border: #6496be;
+    margin-top: 10px;
+}
+
+.contactTitle{
+    color: #6496be;
+    text-align: center;
+}
