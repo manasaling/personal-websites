@@ -17,7 +17,7 @@ const ProjectViewer = () => {
         {project.title}
       </Card.Title>
       <Card.Img
-        style={{ height: "300px", objectFit: "cover" }}
+        style={{ height: "80vh", objectFit: "cover" }}
         src={project.imageURL}
       />
       <Card.Body style={{ paddingLeft: 10 }}>{project.description}</Card.Body>

@@ -1,39 +1,45 @@
-
-.detail{
-  display: flex;
+.detail {
+  display: grid;
   gap: 50px;
   align-items: center;
+  grid-template-areas: "text image";
+}
+
+@media screen and (max-width: 480px) {
+  .detail {
+    grid-template-areas: "image" "text";
   }
+}
+.textContainer {
+  grid-area: text;
+}
 
-.bio{
+.bio {
   width: 500px;
-  font-family: 'Anton', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  color:  #6496be;
-
+  font-family: "Anton", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #6496be;
 }
 
-
-.name{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:  #6496be;
-  
-
+.name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #6496be;
 }
 
-.homepage{
+.homepage {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.cirleimg{
+.cirleimg {
   clip-path: circle();
+  grid-area: image;
 }
-.social-media{
-  border: 1px ;
+.social-media {
+  border: 1px;
 }
-.social-icon{
+.social-icon {
   margin-right: 20px;
 }
