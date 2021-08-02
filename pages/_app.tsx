@@ -2,6 +2,8 @@
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 
+import Container from "react-bootstrap/Container";
+
 // Next.js
 import type { AppProps } from "next/app";
 
@@ -12,8 +14,10 @@ import { StateProvider } from "../context/store"; // react "context" for global 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <StateProvider>
-      <NavigationBar />
-      <Component {...pageProps} />
+      <Container fluid>
+        <NavigationBar />
+        <Component {...pageProps} />
+      </Container>
     </StateProvider>
   );
 }

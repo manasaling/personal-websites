@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 
 // Components
 import ProjectIcon from "./ProjectIcon";
+import { useMediaQuery } from "../../util/useMediaQuery";
 
 const tmp_project_list = [
   {
@@ -43,6 +44,23 @@ const tmp_project_list = [
 ];
 
 const ProjectIconList = () => {
+  const test = useMediaQuery("(min-width: 800px)");
+
+  const projects = React.Children.toArray(
+    tmp_project_list.map((proj) => {
+      return (
+        <Col xs style={{ marginTop: 10 }}>
+          <ProjectIcon
+            title={proj.title}
+            description={proj.description}
+            imageURL={proj.imageURL}
+          />
+        </Col>
+      );
+    })
+  );
+  console.log(test);
+
   return (
     <Container
       style={{
@@ -54,21 +72,13 @@ const ProjectIconList = () => {
         height: "100vh",
       }}
     >
-      <Row style={{ direction: "ltr" }} xs={1}>
-        {React.Children.toArray(
-          tmp_project_list.map((proj) => {
-            return (
-              <Col xs style={{ marginTop: 10 }}>
-                <ProjectIcon
-                  title={proj.title}
-                  description={proj.description}
-                  imageURL={proj.imageURL}
-                />
-              </Col>
-            );
-          })
-        )}
-      </Row>
+      {test ? (
+        <Row style={{ direction: "ltr" }} xs={1}>
+          {projects}
+        </Row>
+      ) : (
+        <Col>{projects}</Col>
+      )}
     </Container>
   );
 };
