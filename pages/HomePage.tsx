@@ -38,12 +38,11 @@ export default function HomePage() {
 
         
 
-          <div className={styles.cirleimg}>
-            <img src={"./picture.jpg"} alt="profile picture"/>
+          <div>
+            <img  className={styles.circleimg} src={"./picture.jpg"} alt="profile picture"/>
           </div>
 
-     
-
+         
         </div>
 
       </div>
