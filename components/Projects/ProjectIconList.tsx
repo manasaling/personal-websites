@@ -44,9 +44,9 @@ const tmp_project_list = [
 ];
 
 const ProjectIconList = () => {
-  const test = useMediaQuery("(min-width: 800px)");
+  const smallScreen = useMediaQuery("(max-width: 990px)");
 
-  const projects = React.Children.toArray(
+  const projectsNormal = React.Children.toArray(
     tmp_project_list.map((proj) => {
       return (
         <Col xs style={{ marginTop: 10 }}>
@@ -59,7 +59,20 @@ const ProjectIconList = () => {
       );
     })
   );
-  console.log(test);
+
+  const projectsSmall = React.Children.toArray(
+    tmp_project_list.map((proj) => {
+      return (
+        <div style={{ minWidth: 300 }}>
+          <ProjectIcon
+            title={proj.title}
+            description={proj.description}
+            imageURL={proj.imageURL}
+          />
+        </div>
+      );
+    })
+  );
 
   return (
     <Container
@@ -69,15 +82,24 @@ const ProjectIconList = () => {
         paddingLeft: 10,
         overflowY: "auto",
         overflowX: "hidden",
-        height: "100vh",
+        height: smallScreen ? "auto" : "100vh",
       }}
     >
-      {test ? (
-        <Row style={{ direction: "ltr" }} xs={1}>
-          {projects}
-        </Row>
+      {smallScreen ? (
+        <div
+          style={{
+            flexDirection: "row",
+            flexWrap: "nowrap",
+            display: "flex",
+            overflowX: "scroll",
+            maxHeight: 200,
+            minWidth: "100%",
+          }}
+        >
+          {projectsSmall}
+        </div>
       ) : (
-        <Col>{projects}</Col>
+        <Col>{projectsNormal}</Col>
       )}
     </Container>
   );

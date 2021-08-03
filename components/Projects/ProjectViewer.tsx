@@ -12,7 +12,14 @@ const ProjectViewer = () => {
   } = useContext(store);
 
   return (
-    <Card style={{ width: "80%", marginRight: 10, maxHeight: "80vh" }}>
+    <Card
+      style={{
+        width: "100%",
+        marginRight: 10,
+        marginTop: 10,
+        maxHeight: "80vh",
+      }}
+    >
       <Card.Title style={{ fontSize: "3em", marginLeft: 10 }}>
         {project.title}
       </Card.Title>

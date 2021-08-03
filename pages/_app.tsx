@@ -14,10 +14,8 @@ import { StateProvider } from "../context/store"; // react "context" for global 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <StateProvider>
-      <Container fluid>
-        <NavigationBar />
-        <Component {...pageProps} />
-      </Container>
+      <NavigationBar />
+      <Component {...pageProps} />
     </StateProvider>
   );
 }
