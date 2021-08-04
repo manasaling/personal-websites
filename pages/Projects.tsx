@@ -10,12 +10,12 @@ import ProjectViewer from "../components/Projects/ProjectViewer";
 export default function Projects() {
   return (
     <div>
-      <Container fluid>
-        <Row>
-          <Col lg={2}>
+      <Container fluid style={{ height: "90vh" }}>
+        <Row style={{ maxHeight: "100%" }}>
+          <Col lg={2} style={{ maxHeight: "100%" }}>
             <ProjectIconList />
           </Col>
-          <Col lg={10}>
+          <Col lg={10} style={{ maxHeight: "100%" }}>
             <ProjectViewer />
           </Col>
         </Row>
