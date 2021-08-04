@@ -82,7 +82,7 @@ const ProjectIconList = () => {
         paddingLeft: 10,
         overflowY: "auto",
         overflowX: "hidden",
-        height: smallScreen ? "auto" : "100vh",
+        height: smallScreen ? "auto" : "90vh",
       }}
     >
       {smallScreen ? (
