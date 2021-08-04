@@ -17,14 +17,14 @@ const ProjectViewer = () => {
         width: "100%",
         marginRight: 10,
         marginTop: 10,
-        maxHeight: "80vh",
+        maxHeight: "60vh",
       }}
     >
       <Card.Title style={{ fontSize: "3em", marginLeft: 10 }}>
         {project.title}
       </Card.Title>
       <Card.Img
-        style={{ height: "80vh", objectFit: "cover" }}
+        style={{ height: "60vh", objectFit: "cover",  }}
         src={project.imageURL}
       />
       <Card.Body style={{ paddingLeft: 10 }}>{project.description}</Card.Body>

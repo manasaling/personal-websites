@@ -41,6 +41,8 @@ export default function HomePage() {
                 className={styles["social-icon"]}
                 url="https://www.instagram.com/manasa.ling/"
               />
+              {/*
+              
               <SocialIcon
                 className={styles["social-icon"]}
                 url="https://twitter.com/itookstock"
@@ -57,6 +59,9 @@ export default function HomePage() {
                 className={styles["social-icon"]}
                 url="https://soundcloud.com/octobersveryown"
               />
+              
+              */}
+              
             </div>
           </div>
 
