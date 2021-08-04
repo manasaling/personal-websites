@@ -60,7 +60,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div>
+          <div className={styles.imgContainer}>
             <img
               className={styles.circleimg}
               src={"./picture.jpg"}
