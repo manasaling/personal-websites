@@ -5,12 +5,13 @@
 }
 
 .submitButton {
-  background-color: #6496be;
-  border: #6496be;
+  background-color: #CC99FF;
+  border: #CC99FF;
   margin-top: 10px;
 }
 
 .contactTitle {
-  color: #6496be;
+  color: #CC99FF;
   text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

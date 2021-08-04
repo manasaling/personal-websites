@@ -4,10 +4,11 @@ import styles from './Contact.module.css';
 export default function Projects() {
   return (
     <div className={styles.contactForm}>
+      
       <div className={styles.contactTitle}>
         <h1>Contact Me</h1>
       </div>
-      <Form action={`https://formsubmit.co/examle@email.com`} method="POST">
+      <Form action={`https://formsubmit.co/lgmanasa@gmail.com`} method="POST">
         <Form.Row>
           <Form.Group as={Col} controlId="formGridFirstName">
             <Form.Label>First Name</Form.Label>

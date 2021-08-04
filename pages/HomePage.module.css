@@ -21,7 +21,7 @@
   max-width: 500px;
   font-family: "Anton", sans-serif;
   font-family: "Roboto", sans-serif;
-  color: #6496be;
+  color: #CC99FF;
   display: block;
   text-align: justify;
   height: auto;
@@ -29,11 +29,11 @@
 
 .name {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #6496be;
+  color: #CC99FF;
 }
 
 .homepage {
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
