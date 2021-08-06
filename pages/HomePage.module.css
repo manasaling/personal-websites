@@ -10,11 +10,12 @@
     grid-template-areas: "image" "text";
     width: 100%;
     height: auto;
-    padding: 16px;
   }
 }
 .textContainer {
   grid-area: text;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bio {
@@ -38,6 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 18px;
 }
 
 .circleimg {
@@ -50,9 +52,6 @@
   margin-right: auto;
 }
 
-.social-media {
-  border: 1px;
-}
 .social-icon {
   margin-right: 20px;
   margin-bottom: 5px;
