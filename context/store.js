@@ -25,6 +25,7 @@ const StateProvider = ({ children }) => {
             title: action.payload.title,
             description: action.payload.description,
             imageURL: action.payload.imageURL,
+            
           },
         };
         return newState;
