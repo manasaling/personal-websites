@@ -8,6 +8,7 @@ import { SET_CURRENT_PROJECT } from "../../context/types";
 const ProjectViewer = () => {
   //const { project } = useContext(store);
   const {
+     // @ts-ignore
     state: { project },
   } = useContext(store);
 
