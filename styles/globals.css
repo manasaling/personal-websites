@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --primary-color: black;
+  /* Height + padding + padding */
+  --header-height: calc(56px);
+  --page-height: calc(100vh - var(--header-height));
+}

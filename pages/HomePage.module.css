@@ -2,12 +2,12 @@
   display: grid;
   gap: 50px;
   align-items: center;
-  grid-template-areas: "text image";
+  grid-template-areas: 'text image';
 }
 
 @media screen and (max-width: 600px) {
   .detail {
-    grid-template-areas: "image" "text";
+    grid-template-areas: 'image' 'text';
     width: 100%;
     height: auto;
   }
@@ -20,21 +20,21 @@
 
 .bio {
   max-width: 500px;
-  font-family: "Anton", sans-serif;
-  font-family: "Roboto", sans-serif;
-  color: #CC99FF;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
   display: block;
   text-align: justify;
   height: auto;
 }
 
 .name {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #CC99FF;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--primary-color);
 }
 
 .homepage {
-  min-height: 90vh;
+  min-height: var(--page-height);
   width: 100%;
   display: flex;
   justify-content: center;
