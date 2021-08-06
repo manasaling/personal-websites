@@ -7,17 +7,15 @@ import Col from "react-bootstrap/Col";
 import ProjectIconList from "../components/Projects/ProjectIconList";
 import ProjectViewer from "../components/Projects/ProjectViewer";
 
-
-
 export default function Projects() {
   return (
     <div>
       <Container fluid style={{ height: "90vh" }}>
         <Row style={{ maxHeight: "100%" }}>
-          <Col lg={2} style={{ maxHeight: "100%" }}>
+          <Col sm={12} lg={2} style={{ maxHeight: "100%" }}>
             <ProjectIconList />
           </Col>
-          <Col lg={10} style={{ maxHeight: "100%" }}>
+          <Col sm={12} lg={10} style={{ maxHeight: "100%" }}>
             <ProjectViewer />
           </Col>
         </Row>
