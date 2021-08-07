@@ -16,7 +16,7 @@ a {
 }
 
 :root {
-  --primary-color: black;
+  --primary-color: #cc99ff;
   /* Height + padding + padding */
   --header-height: calc(56px);
   --page-height: calc(100vh - var(--header-height));
